@@ -11,7 +11,8 @@
         <url>https://api.instagram.com/v1/users/{user_id}/follows?client_id={client_id}</url>
       </urls>
       <inputs>
-      <key id="client_id" as="client_id" type="xs:string" paramType="path" required="true" /> 
+      <key id="client_id" as="client_id" type="xs:string" paramType="path" required="true" />
+      <key id="count" as="count" type="xs:string" paramType="query" required="false" default="100" />
       <key id="user_id" as="user_id" type="xs:string" paramType="path" required="true" />
       </inputs>
       <paging model="url">  
