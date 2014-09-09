@@ -9,7 +9,7 @@
 	 <sampleQuery>SELECT * FROM {table} WHERE user_id="123344222" AND max_id="47499838839" AND count="100"</sampleQuery>
   </meta>
   <bindings>
-    <select itemPath="data" produces="JSON">
+    <select itemPath="" produces="JSON">
       <urls>
         <url>https://api.instagram.com/v1/users/{user_id}/media/recent?client_id={client_id}</url>
       </urls>
