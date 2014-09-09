@@ -19,9 +19,6 @@
       <key id="max_id" as="max_id" type="xs:string" paramType="query" required="false" />
       <key id="user_id" as="user_id" type="xs:string" paramType="path" required="true" />
       </inputs>
-      <paging model="url">  
-            <nextpage path="json.pagination.next_url" />   
-      </paging>
     </select>
   </bindings>
 </table>
