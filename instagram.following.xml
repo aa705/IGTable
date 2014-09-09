@@ -2,7 +2,7 @@
   <meta>
     <author>SolDevv</author>
     <documentationURL>http://instagram.com/developer/endpoints/relationships/#get_users_follows</documentationURL>
-    <description>Get list of users a person is following</description>
+    <description>Get a list of users a person is following</description>
     <sampleQuery>SELECT * FROM {table} WHERE client_id="client id" AND user_id="123344222"</sampleQuery> 
   </meta>
   <bindings>
