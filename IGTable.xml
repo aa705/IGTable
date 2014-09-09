@@ -3,10 +3,10 @@
     <author>SolDevv</author>
     <documentationURL>http://instagram.com/developer/endpoints/users/#get_users_media_recent_with_client_id</documentationURL>
     <description>Gets a user's recent media</description>
-    <sampleQuery>SELECT * FROM {table} WHERE user_id="123344222"</sampleQuery>
-    <sampleQuery>SELECT * FROM {table} WHERE user_id="123344222" AND max_id="47499838839"</sampleQuery>
-    <sampleQuery>SELECT * FROM {table} WHERE user_id="123344222" AND count="100"</sampleQuery>
-	 <sampleQuery>SELECT * FROM {table} WHERE user_id="123344222" AND max_id="47499838839" AND count="100"</sampleQuery>
+    <sampleQuery>SELECT * FROM {table} WHERE client_id="client id" AND user_id="123344222"</sampleQuery>
+    <sampleQuery>SELECT * FROM {table} WHERE client_id="client id" AND user_id="123344222" AND max_id="47499838839"</sampleQuery>
+    <sampleQuery>SELECT * FROM {table} WHERE client_id="client id" AND user_id="123344222" AND count="100"</sampleQuery>
+    <sampleQuery>SELECT * FROM {table} WHERE client_id="client id" AND user_id="123344222" AND max_id="47499838839" AND count="100"</sampleQuery>
   </meta>
   <bindings>
     <select itemPath="" produces="JSON">
