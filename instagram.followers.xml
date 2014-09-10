@@ -1,7 +1,7 @@
 <table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
   <meta>
     <author>SolDevv</author>
-    <documentationURL>http://instagram.com/developer/endpoints/relationships/#get_users_follows</documentationURL>
+    <documentationURL>http://instagram.com/developer/endpoints/relationships/#get_users_followed_by</documentationURL>
     <description>Get list of a user's followers.</description>
     <sampleQuery>SELECT * FROM {table} WHERE client_id="client id" AND user_id="123344222"</sampleQuery> 
   </meta>
