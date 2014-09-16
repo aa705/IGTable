@@ -30,7 +30,7 @@
          {
             var d = new Date(im.created_time * 1000);
             var month = d.getMonth();
-            im.appendChild(<create_month>d</month>);
+            im.appendChild(<create_month>{month}</create_month>);
          }
          
          
