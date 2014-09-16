@@ -28,8 +28,8 @@
         y.log(obj.response.json);
          
         var k = obj.response.json;  k.push("montreal");
-        obj.response.json = k;
-        response.object = k;
+        obj.response.json.added=90;
+        response.object =  obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
         ]]>
       </execute>
