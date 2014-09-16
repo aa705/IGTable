@@ -24,7 +24,7 @@
       </paging>
        <execute>
         <![CDATA[ 
-        var obj = request.get();
+        var obj = request.contentType('application/json').get();
         y.log(obj.response);
         response.object = obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
