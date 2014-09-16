@@ -25,8 +25,9 @@
        <execute>
         <![CDATA[ 
         var obj = request.contentType('application/json').get(); 
-        obj.response.added=90;
+       
         var datalength = obj.response.data.length;
+         obj.response.added=datalength;
         for(var i=0; i<datalength; i++) obj.response.data[i].day = "Monday";
         response.object =  obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
