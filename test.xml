@@ -50,7 +50,8 @@
           
          for each(im in obj.response.data)
          {
-            var mepocht = parseInt(im.created_time) * 1000;
+            var mepocht = parseInt(im.created_time);
+            if(mepocht<10000000000) mepocht *= 1000; 
             var d = new Date(mepocht); 
             im.appendChild(<create_month>{month[d.getMonth()]}</create_month>);
             im.appendChild(<create_day>{weekday[d.getDay()]}</create_day>);
