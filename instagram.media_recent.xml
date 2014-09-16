@@ -24,6 +24,9 @@
       </paging>
     </select>
     <function name="timemod">
+    <inputs>
+      <key id="text" as="texs" type="xs:string" paramType="variable" required="false" />
+    </inputs>
       <execute>
         <![CDATA[ 
          result.json.data.comments.data.addednode = "Author Ayodeji";
