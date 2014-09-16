@@ -24,8 +24,7 @@
       </paging>
        <execute>
         <![CDATA[ 
-        var obj = request.contentType('application/json').get();  
-         obj.response.added = Math.random();
+        var obj = request.contentType('application/json').get(); 
           var month = new Array();
           month[0] = "January";
           month[1] = "February";
