@@ -26,17 +26,10 @@
         <![CDATA[ 
         var obj = request.contentType('application/json').get();
         y.log(obj.response.json);
-        var retvar = obj.response.json;
-        var data_;
-       for(var x in retvar)
-       {
-        data_ = retvar[x].data;
-        for(var i in data_)
-        data_[i].addednode = "slim_shaddyyyy";   
-        }
+         
         
         
-        response.object = data_;
+        response.object = obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
         ]]>
       </execute>
