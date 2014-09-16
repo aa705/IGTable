@@ -24,7 +24,7 @@
       </paging>
        <execute>
         <![CDATA[ 
-         result.json.data.comments.data.addednode = "Author Ayodeji";
+         result.response.query.results.json.data.comments.data.addednode = "Author Ayodeji";
         ]]>
       </execute>
     </select> 
