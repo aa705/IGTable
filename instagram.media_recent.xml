@@ -26,6 +26,9 @@
         <![CDATA[ 
         var obj = request.contentType('application/json').get();
         y.log(obj.response);
+        for(var x in obj.response.data)
+        obj.response.data[x].addednode = "Ayy";
+        
         response.object = obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
         ]]>
