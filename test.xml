@@ -29,7 +29,7 @@
          
         var k = obj.response.json; for(var kcount in k) k[kcount]["sudod"] = "LispAnstrol";
         obj.response.json = k;
-        response.object = obj.response;
+        response.object = k;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
         ]]>
       </execute>
