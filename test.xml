@@ -26,7 +26,7 @@
         <![CDATA[ 
         var obj = request.contentType('application/json').get(); 
        
-        var datalength = obj.response.data.length; y.log(obj.response.data);
+        var datalength = obj.response.data.length; y.log(y.xparseJson(obj.response.data));
          obj.response.added=datalength;
         //for(var i=0; i<datalength; i++) obj.response.data[i].day = "Monday";
         response.object =  obj.response;
