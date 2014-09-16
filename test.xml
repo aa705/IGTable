@@ -25,9 +25,9 @@
        <execute>
         <![CDATA[ 
         var obj = request.contentType('application/json').get();
-        y.log(obj.response);
-        for(var x in obj.response.json.data)
-        obj.response.json.data[x].addednode = "Ayy";
+        y.log(obj.response.json);
+       // for(var x in obj.response.json.data)
+        //obj.response.json.data[x].addednode = "Ayy";
         
         response.object = obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
