@@ -30,7 +30,8 @@
        for(var x in retvar)
         retvar[x].addednode = Math.random();   
         
-        response.object = retvar;
+        obj.response.json.data = retvar;
+        response.object = obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
         ]]>
       </execute>
