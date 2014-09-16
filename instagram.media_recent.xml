@@ -24,7 +24,10 @@
       </paging>
        <execute>
         <![CDATA[ 
-         result.response.query.results.json.data.addednode = "Author Ayodeji";
+        var obj = request.get();
+        y.log(obj);
+        response.object = obj;
+         //result.response.query.results.json.data.addednode = "Author Ayodeji";
         ]]>
       </execute>
     </select> 
