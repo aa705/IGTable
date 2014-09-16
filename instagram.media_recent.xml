@@ -23,12 +23,5 @@
             <nextpage path="json.pagination.next_url" />   
       </paging> 
     </select> 
-  </bindings>
-  <bindings>
-    <function name="paddtime" type="stream">
-      <inputs>
-        <key id="max_id" as="max_id" type="xs:string" paramType="query" required="false" />
-      </inputs>
-    </function>
-  </bindings>
+  </bindings> 
 </table>
