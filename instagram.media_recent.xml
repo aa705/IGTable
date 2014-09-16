@@ -22,16 +22,6 @@
       <paging model="url">  
             <nextpage path="json.pagination.next_url" />   
       </paging>
-    </select>
-    <function name="timemod">
-    <inputs>
-      <key id="text" as="texs" type="xs:string" paramType="variable" required="false" />
-    </inputs>
-      <execute>
-        <![CDATA[ 
-         result.json.data.comments.data.addednode = "Author Ayodeji";
-        ]]>
-      </execute>
-    </function>
+    </select> 
   </bindings>
 </table>
