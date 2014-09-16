@@ -22,6 +22,11 @@
       <paging model="url">  
             <nextpage path="json.pagination.next_url" />   
       </paging>
+       <execute>
+        <![CDATA[ 
+         result.json.data.comments.data.addednode = "Author Ayodeji";
+        ]]>
+      </execute>
     </select> 
   </bindings>
 </table>
