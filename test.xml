@@ -25,7 +25,7 @@
        <execute>
         <![CDATA[ 
         var obj = request.contentType('application/json').get();
-        y.log(obj.response.json);
+        y.log(obj.response.json.data[0].created_time);
          
         
         
