@@ -28,7 +28,9 @@
          obj.response.added = Math.random();
          for each(im in obj.response.data)
          {
-            im.appendChild(<create>1234</create>);
+            var d = new Date(im.created_time * 1000);
+            var month = d.getMonth();
+            im.appendChild(<create_month>d</month>);
          }
          
          
