@@ -48,15 +48,20 @@
           weekday[5] = "Friday";
           weekday[6] = "Saturday";
           
+          function format__(date)
+          { 
+	           var d_ = new Date(parseInt(date) * 1000);
+	          return d_;
+          }
+          
          for each(im in obj.response.data)
          {
-            var mepocht = parseInt(im.created_time);
-            if(mepocht<10000000000) mepocht *= 1000; 
-            var d = new Date(parseInt(im.created_time) * 1000); 
+             
+            var d = format__(im.created_time); 
             im.appendChild(<create_month>{month[d.getMonth()]}</create_month>);
             im.appendChild(<create_day>{weekday[d.getDay()]}</create_day>);
             im.appendChild(<create_year>{d.getFullYear()}</create_year>);
-            im.appendChild(<create_fulltime>{d.toString()}</create_fulltime>);
+            im.appendChild(<create_fulltime>{d.toString()} ex</create_fulltime>);
          }
          
          
