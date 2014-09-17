@@ -61,7 +61,7 @@
             im.appendChild(<create_month>{month[d.getMonth()]}</create_month>);
             im.appendChild(<create_day>{weekday[d.getDay()]}</create_day>);
             im.appendChild(<create_year>{d.getFullYear()}</create_year>);
-            im.appendChild(<create_fulltime>{d.toString()} ex</create_fulltime>);
+            im.appendChild(<create_fulltime>{d.toString()} ex12</create_fulltime>);
          }
          
          
