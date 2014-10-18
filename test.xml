@@ -20,7 +20,8 @@
       <key id="user_id" as="user_id" type="xs:string" paramType="path" required="true" />
       </inputs>
       <paging model="url">  
-            <nextpage path="json.pagination.next_url" />   
+            <nextpage path="json.pagination.next_url" />
+            <pagesize id="per_page" max="250" /> 
       </paging>
        <execute>
         <![CDATA[ 
