@@ -21,7 +21,6 @@
       </inputs>
       <paging model="url">  
             <nextpage path="json.pagination.next_url" />
-            <pagesize id="per_page" max="250" /> 
       </paging>
        <execute>
         <![CDATA[ 
