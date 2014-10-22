@@ -16,7 +16,7 @@
       </inputs> 
        <execute>
         <![CDATA[ 
-        var content = {"text":comment_text};
+        var content = "text="+comment_text;
         var obj = request.contentType('application/json').post(content);  
         response.object =  obj.response;  
         ]]>
