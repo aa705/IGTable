@@ -7,7 +7,7 @@
   <bindings>
     <select itemPath="" produces="JSON">
       <urls>
-        <url>https://api.instagram.com/v1/media/{media_id}/comments</url>
+        <url>https://api.instagram.com/v1/media/{media_id}/likes</url>
       </urls>
       <inputs>
       <key id="access_token" as="access_token" type="xs:string" paramType="query" required="true" />
