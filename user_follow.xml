@@ -11,12 +11,12 @@
       </urls>
       <inputs>
       <key id="access_token" as="access_token" type="xs:string" paramType="query" required="true" />
-      <key id="action" as="action" type="xs:string" paramType="query" required="false" default="follow" />
+      <key id="action" as="action" type="xs:string" paramType="variable" required="false" default="follow" />
       <key id="user_id" as="user_id" type="xs:string" paramType="path" required="true" /> 
       </inputs> 
        <execute>
         <![CDATA[ 
-        var content = "text="+"Nek Nek";
+        var content = "action="+action;
         var obj = request.contentType('application/json').post(content);  
         response.object =  obj.response;  
         ]]>
