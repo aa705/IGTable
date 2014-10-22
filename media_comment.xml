@@ -17,8 +17,8 @@
       </inputs> 
        <execute>
         <![CDATA[ 
-        
-        var obj = request.contentType('application/json').post();  
+        content = "";
+        var obj = request.contentType('application/json').post("");  
         response.object =  obj.response;  
         ]]>
       </execute>
