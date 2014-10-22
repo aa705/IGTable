@@ -7,18 +7,17 @@
   <bindings>
     <select itemPath="" produces="JSON">
       <urls>
-        <url>https://api.instagram.com/v1/media/{media_id}/{{media_endpoint}}</url>
+        <url>https://api.instagram.com/v1/media/{media_id}/comments</url>
       </urls>
       <inputs>
       <key id="access_token" as="access_token" type="xs:string" paramType="query" required="true" />
       <key id="comment_text" as="comment_text" type="xs:string" paramType="variable" required="false" default="20" />
-      <key id="media_endpoint" as="media_endpoint" type="xs:string" paramType="path" required="false" default="comments" />
       <key id="media_id" as="media_id" type="xs:string" paramType="path" required="true" /> 
       </inputs> 
        <execute>
         <![CDATA[ 
-        content = "";
-        var obj = request.contentType('application/json').post("");  
+        var content = "text="+comment_text;
+        var obj = request.contentType('application/json').post(content);  
         response.object =  obj.response;  
         ]]>
       </execute>
