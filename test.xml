@@ -61,9 +61,7 @@
             im.appendChild(<create_year>{d.getFullYear()}</create_year>);
             im.appendChild(<create_fulltime>{d.toString()}</create_fulltime>);
          }
-         
-         y.log(obj.response);
-         y.log(typeof obj.response)
+          
         //for(var i=0; i<datalength; i++) obj.response.data[i].day = "Monday";
         response.object =  obj.response;
          //result.response.query.results.json.data.addednode = "Author Ayodeji";
