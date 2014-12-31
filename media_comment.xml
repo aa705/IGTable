@@ -12,12 +12,17 @@
       <inputs>
       <key id="access_token" as="access_token" type="xs:string" paramType="query" required="true" />
       <key id="comment_text" as="comment_text" type="xs:string" paramType="variable" required="false" default="20" />
+      <key id="action" as="comment_text" type="xs:string" paramType="variable" required="true" default="like" />
       <key id="media_id" as="media_id" type="xs:string" paramType="path" required="true" /> 
       </inputs> 
        <execute>
         <![CDATA[ 
         var content = "text="+comment_text;
-        var obj = request.contentType('application/json').post(content);  
+        var obj;
+        if(action === "like")
+        obj = request.contentType('application/json').post(content); 
+        else
+        obj = request.contentType('application/json').del();
         response.object =  obj.response;  
         ]]>
       </execute>
