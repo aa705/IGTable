@@ -8,16 +8,15 @@
   <bindings>
     <select itemPath="" produces="JSON">
       <urls>
-        <url>https://api.instagram.com/v1/users/{user_id}/follows?client_id={client_id}</url>
+        <url>https://api.instagram.com/v1/users/{user_id}/follows</url>
       </urls>
       <inputs>
-      <key id="client_id" as="client_id" type="xs:string" paramType="path" required="true" />
+      <key id="client_id" as="client_id" type="xs:string" paramType="query" required="false" /> 
+      <key id="access_token" as="access_token" type="xs:string" paramType="query" required="false" />
       <key id="count" as="count" type="xs:string" paramType="query" required="false" default="100" />
+      <key id="cursor" as="cursor" type="xs:string" paramType="query" required="false" />
       <key id="user_id" as="user_id" type="xs:string" paramType="path" required="true" />
-      </inputs>
-      <paging model="url">  
-            <nextpage path="json.pagination.next_url" />   
-      </paging>
+      </inputs> 
     </select>
   </bindings>
 </table>
